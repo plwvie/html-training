@@ -2,10 +2,25 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+p {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 5px chocolate groove;
+  text-align: center;
+  padding: 2px;
+  margin: 200px;
+}
+
 h1 {
   color: rgb(171, 171, 20);
 }
 
-p {
+p.error {
+  color: rgb(125, 255, 233);
+}
+
+#p01 {
   color: black;
+  position: absolute;
+  color: brown;
 }
