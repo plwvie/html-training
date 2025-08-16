@@ -29,5 +29,22 @@
         }
       }
     </script>
+
+    <h2>Sử dụng thuộc tính id trong JavaScript</h2>
+
+    <p>
+      JavaScript có thể truy cập một phần tử với id cụ thể bằng phương thức
+      getElementById()
+    </p>
+
+    <h1 id="myHeader">Hello World!</h1>
+
+    <button onclick="displayResult()">Thay đổi văn bản</button>
+
+    <script>
+      function displayResult() {
+        document.getElementById("myHeader").innerHTML = "Have a nice day!";
+      }
+    </script>
   </body>
 </html>
