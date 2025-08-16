@@ -18,14 +18,64 @@
       h1 {
         padding: 10px;
       }
+
+      a:link,
+      a:visited {
+        background-color: red;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline;
+      }
+
+      a:hover,
+      a:active {
+        background-color: red;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 15px;
+      }
+      th {
+        text-align: left;
+      }
+
+      table {
+        border-spacing: 5px;
+      }
+
+      table#t01 {
+        width: 100%;
+        background-color: #f1f1c1;
+      }
+
+      table#t01 tr:nth-child(even) {
+        background-color: #eee;
+      }
+      table#t01 tr:nth-child(odd) {
+        background-color: #fff;
+      }
+      table#t01 th {
+        color: white;
+        background-color: black;
+      }
     </style>
   </head>
 
-  <body style="background-color: bisque">
-    <h1>pham long vu</h1>
-    <a href="https://www.tedu.com.vn">This is a link</a>
+  <body style="background-image: url(html/background.gif)">
+    <h1 id="001">pham long vu</h1>
+    <a href="https://www.fb.com.vn" target="_blank">This is a link</a>
     <hr />
-    <img src="toan.png" width="500" height="300" alt="phung toan" />
+    <img src="html/haha.jpg" width="500" height="300" alt="phung toan" />
     <hr />
     <p style="color: red">I am a paragraph</p>
     <hr />
@@ -196,5 +246,168 @@
     <h1 style="background-color: hsl(0, 0%, 94%)">hsl(0, 0%, 94%)</h1>
 
     <h1 style="background-color: hsl(0, 0%, 100%)">hsl(0, 0%, 100%)</h1>
+
+    <a href="https://tedu.com.vn/hoc-html-can-ban.html/" target="_blank"
+      >Học HTML căn bản</a
+    >
+    <br />
+
+    <a
+      href="https://tedu.com.vn/hoc-html-can-ban.html/"
+      title="Tự học HTML cho người mới bắt đầu"
+      >Học HTML căn bản</a
+    >
+    <br />
+    <a href="http://fb.com">
+      <img
+        src="click-me-red-button-transparent-png-56302.jpg"
+        alt="HTML tutorial"
+        style="width: 42px; height: 42px; border: 0"
+      />
+    </a>
+    <br />
+    <a href="#001">Jump to pham long vu</a>
+    <br />
+    <a href="home.html#002">jump to home.html</a>
+    <br />
+    <a href="/html/index.html">nhay den thu muc html</a>
+    <br />
+    <img
+      src="strokes-room-on-fire.avif"
+      alt="roo-on-fire"
+      style="width: 500; height: 1000"
+    />
+    <img
+      src="https://www.w3schools.com/images/w3schools_green.jpg"
+      alt="W3Schools.com"
+    />
+    <br />
+    <img src="html/Rotating_earth_(large).gif" alt="Rotating_earth_" />
+
+    <p>
+      <img
+        src="html/haha.jpg"
+        alt="Smiley face"
+        style="float: right; width: 42px; height: 42px"
+      />
+      The image will float to the right of the text.
+    </p>
+
+    <p>
+      <img
+        src="html/haha.jpg"
+        alt="Smiley face"
+        style="float: left; width: 42px; height: 42px"
+      />
+      The image will float to the left of the text.
+    </p>
+
+    <img src="image.png" alt="Workplace" usemap="#workmap" />
+
+    <map name="workmap">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        alt="Computer"
+        href="test-external.html"
+      />
+      <area
+        shape="rect"
+        coords="290,172,333,250"
+        alt="Phone"
+        href="html/index.html"
+      />
+      <area shape="circle" coords="337,300,44" alt="Coffee" href="home.html" />
+    </map>
+
+    <picture>
+      <source media="(min-width: 10000px)" srcset="html/haha.jpg" />
+      <source media="(min-width: 10000px)" srcset="html/background.gif" />
+      <img src="image.png" alt="picture" style="width: auto" />
+    </picture>
+
+    <br />
+    <table style="width: 100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    <br />
+    <table style="width: 100%">
+      <tr>
+        <th>Name</th>
+        <th colspan="2">Telephone</th>
+      </tr>
+      <tr>
+        <td>Bill Gates</td>
+        <td>55577854</td>
+        <td>55577855</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <table style="width: 100%">
+      <tr>
+        <th>Name:</th>
+        <td>Bill Gates</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Telephone:</th>
+        <td>55577854</td>
+      </tr>
+      <tr>
+        <td>55577855</td>
+      </tr>
+    </table>
+
+    <br />
+    <table style="width: 100%">
+      <caption>
+        Monthly savings
+      </caption>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>$50</td>
+      </tr>
+    </table>
+    <br />
+    <table id="t01">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
   </body>
 </html>
