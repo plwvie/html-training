@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Demo nhiều script</title>
+  </head>
+  <body>
+    <h1 id="title">Demo nhiều script</h1>
+
+    <!-- Script số 1: đổi màu chữ -->
+    <script>
+      let title = document.getElementById("title");
+      title.style.color = "blue";
+    </script>
+
+    <!-- Script số 2: đổi nội dung -->
+    <script>
+      title.innerHTML = "Xin chào 👋 (đã đổi bằng script số 2)";
+    </script>
+
+    <!-- Script số 3: file ngoài -->
+    <script src="main.js"></script>
+  </body>
+</html>

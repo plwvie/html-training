@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <h1>My First JavaScript</h1>
+
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML = Date()"
+    >
+      Nhấp để hiển thị Ngày và Giờ.
+    </button>
+
+    <p id="demo"></p>
+
+    <p id="text">Xin chào 👋</p>
+    <button onclick="changeStyle()">Đổi màu</button>
+
+    <script>
+      function changeStyle() {
+        let el = document.getElementById("text");
+        el.style.color = "red"; // đổi màu chữ
+        el.style.fontSize = "24px"; // đổi kích thước
+        el.style.background = "yellow"; // đổi nền
+      }
+    </script>
+  </body>
+</html>
